@@ -20,13 +20,20 @@ print([[
 ░░░░░     ░░░░░  ░░░░░░░░    ░░░░░   ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░                                                                 
 ]])
 local matcha = "https://raw.githubusercontent.com/parudayoo/Matcha-Enhancements/refs/heads/main/"
-local rivalsUniverseId = 9876543210
-local mvs2placeid = 13429790955
 
-if game.GameId == rivalsUniverseId then
-    loadstring(game:HttpGet(matcha .. "Rivals.lua"))()
+local placeScripts = {
+    [13429790955] = "mvs2.lua",
+    [6961824067] = "ftap.lua",
+}
+
+local file
+
+if game.GameId == 17625359962 then
+    file = "Rivals.lua"
+else
+    file = placeScripts[game.PlaceId]
 end
 
-if game.GameId == mvs2placeid then
-    loadstring(game:HttpGet(matcha .. "mvs2.lua"))()
+if file then
+    loadstring(game:HttpGet(matcha .. file))()
 end
