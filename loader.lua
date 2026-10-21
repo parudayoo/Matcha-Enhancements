@@ -26,3 +26,8 @@ local gameId = game.PlaceId
 if gameId == 17625359962 then
     loadstring(game:HttpGet(matcha .. "Rivals.lua"))()
 end
+
+if gameId == 13429790955 then
+    loadstring(game:HttpGet(matcha .. "mvs2.lua"))()
+end
+
