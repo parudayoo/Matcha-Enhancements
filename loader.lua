@@ -20,14 +20,13 @@ print([[
 ░░░░░     ░░░░░  ░░░░░░░░    ░░░░░   ░░░░░░  ░░░░ ░░░░░  ░░░░░░░░                                                                 
 ]])
 local matcha = "https://raw.githubusercontent.com/parudayoo/Matcha-Enhancements/refs/heads/main/"
+local rivalsUniverseId = 9876543210
+local mvs2placeid = 13429790955
 
-local gameId = game.PlaceId
-
-if gameId == 17625359962 then
+if game.GameId == rivalsUniverseId then
     loadstring(game:HttpGet(matcha .. "Rivals.lua"))()
 end
 
-if gameId == 13429790955 then
+if game.GameId == mvs2placeid then
     loadstring(game:HttpGet(matcha .. "mvs2.lua"))()
 end
-
