@@ -1,7 +1,7 @@
 # Matcha-Enhancements
 **support game**
 
-1.Rivals
+・Rivals
 
 # loader
 ```lua
