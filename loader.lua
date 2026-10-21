@@ -1,1 +1,8 @@
+-- loader lua
+local matcha = "https://raw.githubusercontent.com/parudayoo/Matcha-Enhancements/refs/heads/main/"
 
+local gameId = game.PlaceId
+
+if gameId == 17625359962 then
+    loadstring(game:HttpGet(matcha .. "Rivals.lua"))()
+end
