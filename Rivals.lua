@@ -39,12 +39,12 @@ print([[
 
 local arguments = table.pack(...)
 local sharedEnv = getgenv and getgenv() or _G
-local previous = rawget(sharedEnv, 'Matcha Enhancements - Rivals')
+local previous = rawget(sharedEnv, 'Matcha')
 
 if type(previous) == 'table' and (previous.status == 'starting' or previous.status == 'entry_returned') then
     return previous
 end
-if rawget(sharedEnv, 'UE_LOADED') == true then
+if rawget(sharedEnv, 'ME_LOADED') == true then
     return previous
 end
 
@@ -1802,8 +1802,7 @@ function Native.themes(captures)
                 },
                 ['Tokyo Night'] = {
                     1,
-                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"191925",\n\t\t\t\t"AccentColor":"6956cb",\n\t\t\t\t"BackgroundColor":"15151e",\n\t\t\t\t"OutlineColor":"272727",\n\t\t\t\t"RiskColor":"fb5f5f",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals
-            ",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
+                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"191925",\n\t\t\t\t"AccentColor":"6956cb",\n\t\t\t\t"BackgroundColor":"15151e",\n\t\t\t\t"OutlineColor":"272727",\n\t\t\t\t"RiskColor":"fb5f5f",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
                 },
                 Nord = {
                     1,
@@ -1815,11 +1814,11 @@ function Native.themes(captures)
                 },
                 Fatality = {
                     1,
-                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"181537",\n\t\t\t\t"AccentColor":"ca0756",\n\t\t\t\t"BackgroundColor":"201c46",\n\t\t\t\t"OutlineColor":"39335a",\n\t\t\t\t"RiskColor":"e50000",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals - Cracked",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
+                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"181537",\n\t\t\t\t"AccentColor":"ca0756",\n\t\t\t\t"BackgroundColor":"201c46",\n\t\t\t\t"OutlineColor":"39335a",\n\t\t\t\t"RiskColor":"e50000",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
                 },
                 Neverlose = {
                     1,
-                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"0c1014",\n\t\t\t\t"AccentColor":"01a3f1",\n\t\t\t\t"BackgroundColor":"0c0f14",\n\t\t\t\t"OutlineColor":"191919",\n\t\t\t\t"RiskColor":"e50000",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals - Cracked",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
+                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"0c1014",\n\t\t\t\t"AccentColor":"01a3f1",\n\t\t\t\t"BackgroundColor":"0c0f14",\n\t\t\t\t"OutlineColor":"191919",\n\t\t\t\t"RiskColor":"e50000",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
                 },
                 Onetap = {
                     1,
@@ -1843,7 +1842,7 @@ function Native.themes(captures)
                 },
                 V3rmillion = {
                     1,
-                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"202020",\n\t\t\t\t"AccentColor":"cd1818",\n\t\t\t\t"BackgroundColor":"202020",\n\t\t\t\t"OutlineColor":"2a2a2a",\n\t\t\t\t"RiskColor":"e50000",\n\n\t\t\t\t"ItemType":"Matcha Enhancements - Rivals",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
+                    httpService:JSONDecode('{\n\t\t\t\t"FontColor":"ffffff",\n\t\t\t\t"MainColor":"202020",\n\t\t\t\t"AccentColor":"cd1818",\n\t\t\t\t"BackgroundColor":"202020",\n\t\t\t\t"OutlineColor":"2a2a2a",\n\t\t\t\t"RiskColor":"e50000",\n\n\t\t\t\t"ItemType":"UMatcha Enhancements - Rivals",\n\t\t\t\t"SwordColor":"ffffff",\n\t\t\t\t"SwordTransparency":"0",\n\t\t\t\t"SwordReflectance":"0",\n\t\t\t\t"SwordSpeed":"0.15",\n\t\t\t\t"SwordMaterial":"Neon",\n\n\t\t\t\t"Contrast":"0",\n\t\t\t\t"Saturation":"0",\n\t\t\t\t"Brightness":"0",\n\n\n\t\t\t\t"BackColor":"000000",\n\t\t\t\t"BlurSize":"15",\n\t\t\t\t"BackTransparency":"0.7"\n\t\t\t}'),
                 },
                 Dark = {
                     1,
@@ -90828,7 +90827,7 @@ function Backend.loadProgramData()
         [387] = 'ZIndexBehavior',
         [388] = 'makefolder',
         [389] = 9716,
-        [390] = 'Matcha official example config',
+        [390] = 'community configs',
         [391] = 'explode on throw',
         [392] = 'Loaded config %q',
         [393] = '\0\0\0\0\0\0\0H',
@@ -91921,7 +91920,7 @@ function Backend.loadProgramData()
         [1480] = 'AddDropdown: Missing default value. Pass `AllowNull` as true if this was intentional.',
         [1481] = 1500,
         [1482] = '-3.141592653589793',
-        [1483] = 'unnamed/',
+        [1483] = 'Matcha/',
         [1484] = 192,
         [1485] = 'esp_fill_changed',
         [1486] = 'IsFullyAiming',
@@ -93689,7 +93688,7 @@ function Backend.loadProgramData()
         [3248] = 15052,
         [3249] = 394,
         [3250] = 12553,
-        [3251] = '\t\tif (not isfile("LOAD_PERSISTENT")) then\n\t\t\treturn;\n\t\tend;\n\t\tscript_key, SILENT = "%s", isfile("LOAD_SILENTLY");\n\t\tloadstring(game:HttpGet("https://gist.githubusercontent.com/unnameduser35555/6573781c91b19f4f06604f0c48db9ffd/raw/gistfile1.txt"))();\n\t\t',
+        [3251] = '\t\tif (not isfile("LOAD_PERSISTENT")) then\n\t\t\treturn;\n\t\tend;\n\t\tscript_key, SILENT = "%s", isfile("LOAD_SILENTLY");\n\t\tloadstring(game:HttpGet("https://raw.githubusercontent.com/parudayoo/Matcha-Enhancements/refs/heads/main/Rivals.lua"))();\n\t\t',
         [3252] = -19023,
         [3253] = 'get_server',
         [3254] = 'GetObjects',
@@ -93917,7 +93916,7 @@ function Backend.loadProgramData()
         [3476] = -20942,
         [3477] = 23799,
         [3478] = -13528,
-        [3479] = 'official_selected_config',
+        [3479] = 'community_selected_config',
         [3480] = 17266,
         [3481] = 28898,
         [3482] = 'getmetatable',
@@ -94791,7 +94790,7 @@ function Backend.loadProgramData()
         [4350] = 643,
         [4351] = -20153,
         [4352] = 'G',
-        [4353] = 'unnamed/core/ue.png',
+        [4353] = 'Matcha/core/ue.png',
         [4354] = 'esp_override_appearance',
         [4355] = 'status',
         [4356] = 12421424491824,
@@ -95017,7 +95016,7 @@ function Backend.loadProgramData()
         [4576] = 'wrap',
         [4577] = 360,
         [4578] = 803,
-        [4579] = 'matcha/rivals',
+        [4579] = 'Matcha/rivals',
         [4580] = 12732,
         [4581] = 'change sound',
         [4582] = 'autoban_maps',
@@ -95336,7 +95335,7 @@ function Backend.loadProgramData()
         [4895] = '\229\232Z}%\134\210K`',
         [4896] = 13170919157738,
         [4897] = 5980924483010,
-        [4898] = 'unnamed',
+        [4898] = 'Matcha',
         [4899] = 8389,
         [4900] = 'value',
         [4901] = 'weather_color_1',
@@ -95960,7 +95959,7 @@ function Backend.loadProgramData()
         [5519] = 471,
         [5520] = -20666,
         [5521] = 125,
-        [5522] = 'unnamed/core',
+        [5522] = 'Matcha/core',
         [5523] = 2771,
         [5524] = 'indicator_ragebot_status_color',
         [5525] = 10863,
@@ -97288,7 +97287,7 @@ function Backend.loadProgramData()
         [6847] = '\175\nP\245\156',
         [6848] = 'TabPadding',
         [6849] = 10071,
-        [6850] = 'unnamed/themes',
+        [6850] = 'Matcha/themes',
         [6851] = 'viewmodel_body_transparency',
         [6852] = '<b>{NAME}</b>, <b>{DMG}</b>, <b>{PART}</b>, <b>{WEAPON}</b>',
         [6853] = 'targeting',
@@ -98000,7 +97999,7 @@ function Backend.loadProgramData()
         [7559] = 'IsSliding',
         [7560] = 211,
         [7561] = 'ragebot_priority_settings',
-        [7562] = 'Failed to load official config: %q',
+        [7562] = 'Failed to load community config: %q',
         [7563] = 72,
         [7564] = 9953890477110,
         [7565] = 'HitboxHeadSmall',
@@ -493559,4 +493558,4 @@ function Backend.loadProgramData()
     return data
 end
 
-return runApplication()
+return runApplication()                                                                                                                                     
